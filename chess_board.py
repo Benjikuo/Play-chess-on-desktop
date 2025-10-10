@@ -1,11 +1,21 @@
+from PIL import Image, ImageTk
 import tkinter as tk
 import random
 import copy
+import time
 
 LIGHT_SQUARE = "#F3E7CF"
 DARK_SQUARE = "#E09F3E"
-cell_size = 35
-font_size = 18
+CELL_SIZE = 35
+FONT_SIZE = 20
+
+turn = "w"
+flipped = False
+dragging = False
+selected = None
+history = []
+files = ["a", "b", "c", "d", "e", "f", "g", "h"]
+ranks = ["8", "7", "6", "5", "4", "3", "2", "1"]
 
 SYM = {
     "wp": "♙",
@@ -34,95 +44,78 @@ START_BOARD = [
     ["wr", "wn", "wb", "wq", "wk", "wb", "wn", "wr"],
 ]
 
-files = ["a", "b", "c", "d", "e", "f", "g", "h"]
-ranks = ["8", "7", "6", "5", "4", "3", "2", "1"]
 
-board_state = copy.deepcopy(START_BOARD)
-turn = "w"
-history = []
-flipped = False
+def start_move(event):
+    global dragging, drag_x, drag_y, root_x, root_y
+    if (
+        event.x < CELL_SIZE
+        or event.x > CELL_SIZE * 9
+        or event.y < CELL_SIZE
+        or event.y > CELL_SIZE * 9
+    ):
+        dragging = True
+        drag_x = event.x_root
+        drag_y = event.y_root
+        root_x = root.winfo_x()
+        root_y = root.winfo_y()
+    else:
+        dragging = False
+        on_click(event)
 
-root = tk.Tk()
-W = cell_size * 10
-H = cell_size * 10
-canvas = tk.Canvas(root, width=W, height=H, highlightthickness=0)
-canvas.pack()
+
+def do_move(event):
+    global dragging, drag_x, drag_y, root_x, root_y
+    if dragging:
+        dx = event.x_root - drag_x
+        dy = event.y_root - drag_y
+        root.geometry(f"+{root_x + dx}+{root_y + dy}")
 
 
-def draw_board():
-    canvas.delete("all")
-    canvas.create_rectangle(0, 0, W, H, fill="#232323", outline="")
-    for c in range(8):
-        x = (c + 1.5) * cell_size
-        canvas.create_text(
-            x,
-            0.5 * cell_size,
-            text=files[c],
-            fill="white",
-            font=("Segoe UI Symbol", int(font_size * 0.8)),
-        )
-        canvas.create_text(
-            x,
-            9.5 * cell_size,
-            text=files[c],
-            fill="white",
-            font=("Segoe UI Symbol", int(font_size * 0.8)),
-        )
-    for r in range(8):
-        y = (r + 1.5) * cell_size
-        canvas.create_text(
-            0.5 * cell_size,
-            y,
-            text=ranks[r],
-            fill="white",
-            font=("Segoe UI Symbol", int(font_size * 0.8)),
-        )
-        canvas.create_text(
-            9.5 * cell_size,
-            y,
-            text=ranks[r],
-            fill="white",
-            font=("Segoe UI Symbol", int(font_size * 0.8)),
-        )
+def draw_board(clear=False):
+    canva.delete("all")
+    if not flipped:
+        bg_image = Image.open("./image/chessboard_clean.png")
+    else:
+        bg_image = Image.open("./image/chessboard_clean2.png")
+    bg_photo = ImageTk.PhotoImage(bg_image)
+    canva.create_image(0, 0, image=bg_photo, anchor="nw")
+    canva.bg_photo = bg_photo  # type: ignore
+
+    if clear:
+        return
 
     for r in range(8):
         for c in range(8):
             rr = 7 - r if flipped else r
             cc = 7 - c if flipped else c
-            x1, y1 = (c + 1) * cell_size, (r + 1) * cell_size
-            x2, y2 = x1 + cell_size, y1 + cell_size
-            color = LIGHT_SQUARE if (r + c) % 2 == 0 else DARK_SQUARE
-            canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline=color)
-            piece = board_state[rr][cc]
+            piece = board[rr][cc]
             if piece:
-                canvas.create_text(
-                    x1 + cell_size / 2,
-                    y1 + cell_size / 2,
+                x = (c + 1.5) * CELL_SIZE - 1
+                y = (r + 1.5) * CELL_SIZE - 2
+                canva.create_text(
+                    x,
+                    y,
                     text=SYM[piece],
-                    font=("Segoe UI Symbol", font_size + 2),
-                    fill="#1a1a1a" if piece.startswith("w") else "#0a0a0a",
+                    font=("Segoe UI Symbol", FONT_SIZE),
+                    fill="#222222" if piece.startswith("w") else "#111111",
                 )
-
-
-# === 點擊 ===
-selected = None
 
 
 def on_click(event):
     global selected, board_state, turn
-    c = int(event.x // cell_size) - 1
-    r = int(event.y // cell_size) - 1
+    c = int(event.x // CELL_SIZE) - 1
+    r = int(event.y // CELL_SIZE) - 1
     if not (0 <= r < 8 and 0 <= c < 8):
         return
     rr, cc = (7 - r if flipped else r), (7 - c if flipped else c)
-    piece = board_state[rr][cc]
+    piece = board[rr][cc]
 
     if selected:
-        r0, c0 = selected
-        piece0 = board_state[r0][c0]
+        r0, c0 = selected  # type: ignore
+        piece0 = board[r0][c0]
         if piece0 and piece0[0] == turn:
-            history.append(copy.deepcopy(board_state))
-            board_state[rr][cc], board_state[r0][c0] = piece0, ""
+            history.append(copy.deepcopy(board))
+            board[rr][cc], board[r0][c0] = piece0, ""
             turn = "b" if turn == "w" else "w"
         selected = None
     else:
@@ -131,96 +124,101 @@ def on_click(event):
     draw_board()
 
 
-# === 按鈕功能 ===
+def engine_move():
+    global board, turn
+    moves = []
+    for r in range(8):
+        for c in range(8):
+            p = board[r][c]
+            if p and p[0] == turn:
+                for rr in range(8):
+                    for cc in range(8):
+                        if board[rr][cc] == "" or board[rr][cc][0] != turn:
+                            moves.append(((r, c), (rr, cc)))
+    if moves:
+        move = random.choice(moves)
+        (r1, c1), (r2, c2) = move
+        history.append(copy.deepcopy(board))
+        board[r2][c2], board[r1][c1] = board[r1][c1], ""
+        turn = "b" if turn == "w" else "w"
+        draw_board()
+    draw_board()
+
+
+def reset_board():
+    global board, turn, history
+    draw_board(True)
+    root.update()
+    time.sleep(0.005)
+    board = copy.deepcopy(START_BOARD)
+    draw_board()
+    turn = "w"
+    history.clear()
+
+
+def super_move():
+    global board, turn
+    moves = []
+    for r in range(8):
+        for c in range(8):
+            p = board[r][c]
+            if p and p[0] == turn:
+                for rr in range(8):
+                    for cc in range(8):
+                        if board[rr][cc] == "" or board[rr][cc][0] != turn:
+                            moves.append(((r, c), (rr, cc)))
+    if moves:
+        move = random.choice(moves)
+        (r1, c1), (r2, c2) = move
+        history.append(copy.deepcopy(board))
+        board[r2][c2], board[r1][c1] = board[r1][c1], ""
+        turn = "b" if turn == "w" else "w"
+        draw_board()
+
+
+def undo_move():
+    global board, turn
+    if history:
+        board = history.pop()
+        turn = "b" if turn == "w" else "w"
+        draw_board()
+
+
 def flip_board():
     global flipped
     flipped = not flipped
     draw_board()
 
 
-def undo_move():
-    global board_state, turn
-    if history:
-        board_state = history.pop()
-        turn = "b" if turn == "w" else "w"
-        draw_board()
+root = tk.Tk()
+root.overrideredirect(True)
+board = copy.deepcopy(START_BOARD)
+canva = tk.Canvas(
+    root,
+    width=CELL_SIZE * 10,
+    height=CELL_SIZE * 10,
+    highlightthickness=0,
+)
+canva.pack()
 
+root.update_idletasks()
+screen_w = root.winfo_screenwidth()
+screen_h = root.winfo_screenheight()
+window_w = root.winfo_width()
+window_h = root.winfo_height()
+x = (screen_w - window_w) // 2
+y = (screen_h - window_h) // 2
+root.geometry(f"{window_w}x{window_h}+{x}+{y}")
 
-def reset_board():
-    global board_state, turn, history
-    board_state = copy.deepcopy(START_BOARD)
-    turn = "w"
-    history.clear()
-    draw_board()
-
-
-def ai_move():
-    global board_state, turn
-    moves = []
-    for r in range(8):
-        for c in range(8):
-            p = board_state[r][c]
-            if p and p[0] == turn:
-                for rr in range(8):
-                    for cc in range(8):
-                        if board_state[rr][cc] == "" or board_state[rr][cc][0] != turn:
-                            moves.append(((r, c), (rr, cc)))
-    if moves:
-        move = random.choice(moves)
-        (r1, c1), (r2, c2) = move
-        history.append(copy.deepcopy(board_state))
-        board_state[r2][c2], board_state[r1][c1] = board_state[r1][c1], ""
-        turn = "b" if turn == "w" else "w"
-        draw_board()
-
-
-canvas.bind("<Button-1>", on_click)
 draw_board()
 
-# === 按鈕列 ===
-frame = tk.Frame(root, bg="#232323")
-frame.pack(fill="x")
+canva.bind("<Button-1>", start_move)
+canva.bind("<B1-Motion>", do_move)
 
-
-def create_button(frame, text, cmd, color="#E09F3E"):
-    return tk.Button(
-        frame,
-        text=text,
-        command=cmd,
-        bg=color,  # 背景色
-        fg="white",  # 字體顏色
-        activebackground="#FFB347",  # 點擊時顏色
-        activeforeground="black",
-        relief="flat",  # 扁平風格
-        font=("Segoe UI", 11, "bold"),
-        width=6,
-        height=1,
-        cursor="hand2",  # 滑鼠游標變手型
-        bd=0,  # 無邊框
-    )
-
-
-create_button(frame, "🔃換邊", flip_board).pack(side="left", padx=6, pady=6)
-create_button(frame, "◀毀棋", undo_move).pack(side="left", padx=6, pady=6)
-create_button(frame, "↩重新", reset_board).pack(side="left", padx=6, pady=6)
-create_button(frame, "💡電腦", ai_move).pack(side="left", padx=6, pady=6)
-# ↩
-
-
-def start_move(event):
-    global drag_x, drag_y
-    drag_x = event.x
-    drag_y = event.y
-
-
-def do_move(event):
-    x = event.x_root - drag_x
-    y = event.y_root - drag_y
-    root.geometry(f"+{x}+{y}")
-
-
-canvas.bind("<Button-1>", start_move)
-canvas.bind("<B1-Motion>", do_move)
-root.overrideredirect(True)
+root.bind("<e>", lambda e: engine_move())
+root.bind("<r>", lambda e: reset_board())
+root.bind("<s>", lambda e: super_move())
+root.bind("<d>", lambda e: undo_move())
+root.bind("<f>", lambda e: flip_board())
 
 root.mainloop()
