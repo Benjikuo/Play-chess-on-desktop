@@ -54,6 +54,15 @@ def toggle_state(event=None):
         pawn = True
 
 
+def watch_child():
+    global chess_program, playing_video
+    if chess_program and chess_program.poll() is not None:
+        if not pawn and not playing_video:
+            toggle_state(event=None)
+        chess_program = None
+    root.after(100, watch_child)
+
+
 cap = cv2.VideoCapture(VIDEO_PATH)
 ret, frame = cap.read()
 if not ret:
@@ -92,6 +101,8 @@ root.geometry(f"{window_w}x{window_h}+{x}+{y}")
 pawn = True
 playing_video = False
 chess_program = None
+
+watch_child()
 
 photo_first = ImageTk.PhotoImage(Image.fromarray(frames[0]))
 label = tk.Label(root, image=photo_first, bg=BG_COLOR, bd=0)
