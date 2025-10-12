@@ -30,7 +30,7 @@ def draw_board(clear=False):
     )
     bg_photo = ImageTk.PhotoImage(bg_image)
     canva.create_image(0, 0, image=bg_photo, anchor="nw")
-    canva.bg_photo = bg_photo
+    canva.bg_photo = bg_photo  # type: ignore
     if clear:
         return
     for r in range(8):
