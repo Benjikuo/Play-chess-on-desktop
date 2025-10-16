@@ -5,7 +5,7 @@ INF = 10**9
 ai_stop = False
 
 PIECE_SQUARE = {
-    "k": [  # King
+    "k": [
         [0, 0, 0, 0, 0, 0, 0, 0],
         [0, 1, 1, 1, 1, 1, 1, 0],
         [0, 1, 1, 1, 1, 1, 1, 0],
@@ -15,7 +15,7 @@ PIECE_SQUARE = {
         [4, 3, 2, -1, -1, 1, 3, 4],
         [4, 6, 4, -1, 2, -1, 6, 4],
     ],
-    "q": [  # Queen
+    "q": [
         [-5, 0, 1, 1, 1, 1, 0, -5],
         [2, 4, 3, 3, 3, 3, 4, 2],
         [0, 0, 1, 1, 1, 1, 0, 0],
@@ -25,7 +25,7 @@ PIECE_SQUARE = {
         [-5, 0, 1, 1, 0, 0, 0, -5],
         [-5, 1, 1, 1, 1, 0, 0, -5],
     ],
-    "r": [  # Rook
+    "r": [
         [1, 1, 1, 1, 1, 1, 1, 1],
         [3, 4, 3, 3, 3, 3, 4, 3],
         [0, 0, 0, 0, 0, 0, 0, 0],
@@ -35,7 +35,7 @@ PIECE_SQUARE = {
         [-2, 0, 1, 1, 1, 1, 0, -2],
         [-1, -1, 1, 6, 6, 1, -1, -1],
     ],
-    "b": [  # Bishop
+    "b": [
         [-4, -2, -1, -1, -1, -1, -2, -4],
         [-2, 0, -1, 0, 0, -1, 0, -2],
         [1, 0, 1, 1, 1, 1, 0, 1],
@@ -45,7 +45,7 @@ PIECE_SQUARE = {
         [-2, 2, 0, 2, 2, 0, 2, -2],
         [-4, -2, -2, -1, -1, -2, -2, -4],
     ],
-    "n": [  # Knight
+    "n": [
         [-4, -2, -2, -2, -2, -2, -2, -4],
         [-2, -2, 6, 5, 5, 6, -2, -2],
         [-2, 2, 3, 4, 4, 3, 2, -2],
@@ -55,7 +55,7 @@ PIECE_SQUARE = {
         [-2, -2, 0, 0, 0, 0, -2, -2],
         [-4, -2, -2, -2, -2, -2, -2, -4],
     ],
-    "p": [  # Pawn
+    "p": [
         [0, 0, 0, 0, 0, 0, 0, 0],
         [11, 10, 11, 11, 11, 11, 10, 11],
         [9, 8, 8, 9, 9, 8, 8, 9],
@@ -69,7 +69,7 @@ PIECE_SQUARE = {
 
 
 def find_best_move(logic, max_depth, callback=None):
-    original_turn = logic.turn  # ✅ 記住最初是誰在走
+    original_turn = logic.turn
 
     def minimax(depth, maximizing):
         if depth == 0:
@@ -111,14 +111,12 @@ def find_best_move(logic, max_depth, callback=None):
             logic.make_move(*mv)
             val = minimax(depth - 1, not maximizing)
             logic.restore(snap)
-
             if maximizing:
                 best = max(best, val)
             else:
                 best = min(best, val)
         return best
 
-    # === 主函式 ===
     best_move = None
     best_score = -(10**12)
     legal = logic.get_legal_moves(logic.turn)
@@ -129,13 +127,11 @@ def find_best_move(logic, max_depth, callback=None):
         logic.make_move(*mv)
         score = minimax(max_depth - 1, False)
         logic.restore(snap)
-
         if score > best_score - random.randint(0, 5):
             best_score = score
             best_move = mv
         elif score == best_score and random.random() < 0.1:
-            best_move = mv  # 增加隨機性
-
+            best_move = mv
     if callback:
         callback(None)
     return best_move
