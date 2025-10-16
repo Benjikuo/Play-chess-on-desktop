@@ -1,0 +1,4829 @@
+[
+  {
+    "board": [
+      "br bn bb bq bk bb bn br",
+      "bp bp bp bp bp bp bp bp",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wp wp wp wp wp wp wp wp",
+      "wr wn wb wq wk wb wn wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bq bk bb bn br",
+      "bp bp bp bp bp bp bp bp",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wp wp wp wp __ wp wp wp",
+      "wr wn wb wq wk wb wn wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": [
+      5,
+      4
+    ]
+  },
+  {
+    "board": [
+      "br bn bb bq bk bb bn br",
+      "bp bp bp bp __ bp bp bp",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wp wp wp wp __ wp wp wp",
+      "wr wn wb wq wk wb wn wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": [
+      2,
+      4
+    ]
+  },
+  {
+    "board": [
+      "br bn bb bq bk bb bn br",
+      "bp bp bp bp __ bp bp bp",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ __ __ __ wn __ __",
+      "wp wp wp wp __ wp wp wp",
+      "wr wn wb wq wk wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb __ bk bb bn br",
+      "bp bp bp bp __ bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ __ bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ __ __ __ wn __ __",
+      "wp wp wp wp __ wp wp wp",
+      "wr wn wb wq wk wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb __ bk bb bn br",
+      "bp bp bp bp __ bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ __ bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wp wp wp wp __ wp wp wp",
+      "wr wn wb wq wk wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb __ bk bb bn br",
+      "bp bp bp __ __ bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wp wp wp wp __ wp wp wp",
+      "wr wn wb wq wk wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": [
+      2,
+      3
+    ]
+  },
+  {
+    "board": [
+      "br bn bb __ bk bb bn br",
+      "bp bp bp __ __ bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ __",
+      "wp wp __ wp __ wp wp wp",
+      "wr wn wb wq wk wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": false,
+      "bR7": false
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ bb bn br",
+      "bp bp bp __ __ bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ __",
+      "wp wp __ wp __ wp wp wp",
+      "wr wn wb wq wk wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": false,
+      "wR7": false,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ bb bn br",
+      "bp bp bp __ __ bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ __",
+      "wp wp __ wp wk wp wp wp",
+      "wr wn wb wq __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ bn br",
+      "bp bp bp __ bb bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ __",
+      "wp wp __ wp wk wp wp wp",
+      "wr wn wb wq __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ bn br",
+      "bp bp bp __ bb bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ __ __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ wp",
+      "wp wp __ wp wk wp wp __",
+      "wr wn wb wq __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ bn br",
+      "bp __ bp __ bb bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ bp __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ wp",
+      "wp wp __ wp wk wp wp __",
+      "wr wn wb wq __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": [
+      2,
+      1
+    ]
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ bn br",
+      "bp __ bp __ bb bp bp bp",
+      "__ __ __ __ __ bq __ __",
+      "__ bp __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ wp",
+      "wp wp __ wp wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ bn br",
+      "bp __ bp __ bb bp __ bp",
+      "__ __ __ __ __ bq bp __",
+      "__ bp __ bp bp __ wn __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ __ __ wp",
+      "wp wp __ wp wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ bn br",
+      "bp __ bp __ bb bp __ bp",
+      "__ __ __ __ __ bq bp __",
+      "__ bp __ bp bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ wn __ wp",
+      "wp wp __ wp wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "__ __ __ __ __ bq bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp __ __ wn __ wp",
+      "wp wp __ wp wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "__ __ __ __ __ bq bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp wp __ wn __ wp",
+      "wp wp __ __ wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn __ bk __ __ __ br",
+      "bp bb bp __ bb bp __ bp",
+      "__ __ __ __ __ bq bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ __ __ __ wp __ __ __",
+      "__ __ wp wp __ wn __ wp",
+      "wp wp __ __ wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn __ bk __ __ __ br",
+      "bp bb bp __ bb bp __ bp",
+      "__ __ __ __ __ bq bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ __",
+      "__ __ wp wp __ wn __ wp",
+      "wp __ __ __ wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": [
+      5,
+      1
+    ]
+  },
+  {
+    "board": [
+      "br bn __ bk __ __ __ br",
+      "bp bb bp __ bb bp __ bp",
+      "bq __ __ __ __ __ bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ __",
+      "__ __ wp wp __ wn __ wp",
+      "wp __ __ __ wk wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn __ bk __ __ __ br",
+      "bp bb bp __ bb bp __ bp",
+      "bq __ __ __ __ __ bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ __",
+      "__ __ wp wp __ wn __ wp",
+      "wp __ __ wk __ wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ __ bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ __",
+      "__ __ wp wp __ wn __ wp",
+      "wp __ __ wk __ wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br bn bb bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ __ bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ wk __ wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bb bk __ __ __ br",
+      "bp __ bp bn bb bp __ bp",
+      "bq __ __ __ __ __ bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ wk __ wp wp wr",
+      "wr wn wb wq __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bb bk __ __ __ br",
+      "bp __ bp bn bb bp __ bp",
+      "bq __ __ __ __ __ bp bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ wk wq wp wp wr",
+      "wr wn wb __ __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bb bk __ __ __ br",
+      "bp __ bp bn bb bp __ bp",
+      "bq __ __ __ __ __ __ bn",
+      "__ bp __ bp bp __ bp __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ wk wq wp wp wr",
+      "wr wn wb __ __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bb bk __ __ __ br",
+      "bp __ bp bn bb bp __ bp",
+      "bq __ __ __ __ __ __ bn",
+      "__ bp __ bp bp __ bp __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp wp wr",
+      "wr wn wb __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bb bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ bn __ bn",
+      "__ bp __ bp bp __ bp __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp wp wr",
+      "wr wn wb __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bb bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ bn __ bn",
+      "__ bp __ bp bp __ wb __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp wp wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ bn __ bn",
+      "__ bp __ bp bp bb wb __",
+      "__ wp __ __ wp __ __ wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp wp wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ bn __ bn",
+      "__ bp __ bp bp bb wb __",
+      "__ wp __ __ wp __ wp wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": [
+      5,
+      6
+    ]
+  },
+  {
+    "board": [
+      "br __ __ bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ bn __ bn",
+      "__ bp __ bp bp __ wb __",
+      "__ wp __ __ wp __ bb wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk __ __ __ br",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ wb __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk br __ __ __",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ wb __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb wn",
+      "__ __ wp wp __ __ __ wp",
+      "wp __ __ __ wq wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk br __ __ __",
+      "bp __ bp __ bb bp __ bp",
+      "bq __ __ __ __ wb __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb __",
+      "__ __ wp wp __ wn __ wp",
+      "wp __ __ __ wq wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk br __ __ __",
+      "bp bq bp __ bb bp __ bp",
+      "__ __ __ __ __ wb __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb __",
+      "__ __ wp wp __ wn __ wp",
+      "wp __ __ __ wq wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk br __ __ __",
+      "bp bq bp __ bb bp __ bp",
+      "__ __ __ __ __ wb __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb __",
+      "__ __ wp wp wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk br __ __ __",
+      "__ bq bp __ bb bp __ bp",
+      "bp __ __ __ __ wb __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb __",
+      "__ __ wp wp wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ bk br __ __ __",
+      "__ bq bp __ wb bp __ bp",
+      "bp __ __ __ __ __ __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb __",
+      "__ __ wp wp wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ br __ __ __",
+      "__ bq bp bk wb bp __ bp",
+      "bp __ __ __ __ __ __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ __ wp __ bb __",
+      "__ __ wp wp wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ br __ __ __",
+      "__ bq bp bk wb bp __ bp",
+      "bp __ __ __ __ __ __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ br __ __ __",
+      "__ __ bp bk wb bp __ bp",
+      "bp bq __ __ __ __ __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ br __ __ __",
+      "__ __ bp bk __ bp __ bp",
+      "bp bq __ __ __ __ __ bn",
+      "__ bp wb bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bk __ br __ __ __",
+      "__ __ bp __ __ bp __ bp",
+      "bp bq __ __ __ __ __ bn",
+      "__ bp wb bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bk __ br __ __ __",
+      "__ __ bp __ wb bp __ bp",
+      "bp bq __ __ __ __ __ bn",
+      "__ bp __ bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bk __ br __ __ __",
+      "__ __ bp __ wb bp __ bp",
+      "__ bq __ __ __ __ __ bn",
+      "bp bp __ bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ __ wp __ wr",
+      "wr wn __ __ wk wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ bk __ br __ __ __",
+      "__ __ bp __ wb bp __ bp",
+      "__ bq __ __ __ __ __ bn",
+      "bp bp __ bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ wk wp __ wr",
+      "wr wn __ __ __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ bp __ wb bp __ bp",
+      "__ bq __ __ __ __ __ bn",
+      "bp bp __ bp bp __ __ __",
+      "__ wp __ wp wp __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ wk wp __ wr",
+      "wr wn __ __ __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ bp __ wb bp __ bp",
+      "__ bq __ __ __ __ __ bn",
+      "bp bp __ wp bp __ __ __",
+      "__ wp __ wp __ __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ wk wp __ wr",
+      "wr wn __ __ __ wb __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ bp __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "bp bp __ wp bp __ __ __",
+      "__ wp __ wp __ __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ wk wp __ wr",
+      "wr wn __ __ __ wb __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ bp __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "bp bp __ wp bp __ __ __",
+      "__ wp __ wp __ __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ bp __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp __ wp __ __ bb __",
+      "__ __ wp __ wq wn __ wp",
+      "wp __ __ __ wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ bp __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp __ wp __ __ bb __",
+      "wp __ wp __ wq wn __ wp",
+      "__ __ __ __ wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp bp wp bp __ __ __",
+      "__ bp __ wp __ __ bb __",
+      "wp __ wp __ wq wn __ wp",
+      "__ __ __ __ wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": [
+      2,
+      2
+    ]
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp bp wp bp __ __ __",
+      "__ bp __ wp __ __ bb __",
+      "wp __ wp __ __ wn __ wp",
+      "__ __ __ wq wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ __ bb __",
+      "wp __ wp __ __ wn __ wp",
+      "__ __ __ wq wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq bb __",
+      "wp __ wp __ __ wn __ wp",
+      "__ __ __ __ wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ bb __ wp",
+      "__ __ __ __ wk wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ __ bp",
+      "__ bq __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ bq __ __ wb __ __ bp",
+      "__ __ __ __ __ bp __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ wb __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ __ __ bq bp",
+      "__ __ __ __ __ wb __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ br __ __ __",
+      "__ __ __ __ wb __ bq bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ __ __ wb __ bq bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wb __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ __ __ wb __ bq bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ bp bp wp __ wq __ __",
+      "wp __ wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ __ __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ __ __ wb __ bq bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ wq __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ __ __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ __ __ wb __ bq bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ wq wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ __ __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ wq wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ __ __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ wq __ wp wb __",
+      "wr wn __ __ __ __ __ wr"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ bq __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ wq __ wp wb __",
+      "wr wn __ __ __ __ __ wr"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ __ bq __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ wq __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ wq __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp bp __ __ __",
+      "__ __ bp wp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ wq wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ wq wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk br __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ wp __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ wq wr __ wb"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ wq wr __ wb"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br bk __ wq __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ wq __ __ __",
+      "__ bq bk __ __ __ __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq bk __ __ wq __ bp",
+      "__ __ __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ wq __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ wq __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "bq br __ __ __ __ __ __",
+      "__ __ __ __ __ wq __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "bq br __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp bp __ __ __ __",
+      "wp bp wp __ __ wk __ wp",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp bp __ __ __ wp",
+      "wp bp wp __ __ wk __ __",
+      "__ __ __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp bp __ __ __ wp",
+      "wp __ wp __ __ wk __ __",
+      "__ bp __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp bp __ wq __ wp",
+      "wp __ wp __ __ wk __ __",
+      "__ bp __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp __ __ wq __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ bp __ __ __ wp wb __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ br __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp __ __ wq __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ __ __ __",
+      "__ __ bp __ __ wq __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "__ bk __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ __ __ __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ __ __ __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ bq __ __ __ __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ __ __ __ wp",
+      "wp __ bp __ wk __ __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ __ __ __ wp",
+      "wp __ bp __ wk __ __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ wb"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ wb __ __ wp",
+      "wp __ bp __ wk __ __ __",
+      "__ bp __ __ __ wp __ __",
+      "wr wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ wb __ __ wp",
+      "wp __ bp __ wk __ __ __",
+      "__ __ __ __ __ wp __ __",
+      "bq wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ wb __ __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ __ __ __ __ wp __ __",
+      "bq wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "__ __ bp __ wb __ __ wp",
+      "wp __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ __ __ __ __ bn",
+      "__ bp __ br __ wq __ __",
+      "wp __ bp __ wb __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ br __ __ __ bn",
+      "__ bp __ __ __ wq __ __",
+      "wp __ bp __ wb __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "bk __ __ br __ __ __ bn",
+      "__ bp __ __ __ __ __ __",
+      "wp __ bp __ wb __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "__ __ __ br __ __ __ bn",
+      "bk bp __ __ __ __ __ __",
+      "wp __ bp __ wb __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "__ __ wb br __ __ __ bn",
+      "bk bp __ __ __ __ __ __",
+      "wp __ bp __ __ __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "__ __ wb br __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ wr __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ bq __ __ bp",
+      "__ __ wb br __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ wr __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb br __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ bq wp __ __",
+      "__ wn __ __ wr __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb br __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp __ __ wk __ __",
+      "__ bq __ __ wr wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br __ wk __ __",
+      "__ bq __ __ wr wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr wk __ __",
+      "__ bq __ __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr wk __ __",
+      "__ __ __ __ bq wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ bn",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ wk __",
+      "__ __ __ __ bq wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ __",
+      "bk __ __ __ __ bn __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ wk __",
+      "__ __ __ __ bq wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ __",
+      "bk __ __ __ __ bn __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ __ wk",
+      "__ __ __ __ bq wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ __",
+      "bk __ __ __ __ bn __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ __ wk",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "br __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ bp",
+      "__ __ wb __ __ __ __ __",
+      "bk __ __ __ __ bn __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ __ wk",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ bn __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ __ wk",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ bn __ __",
+      "bp __ bp __ __ __ __ wp",
+      "__ __ bp br wr __ __ wk",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ bn",
+      "__ __ bp br wr __ __ wk",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wk",
+      "__ __ bp br wr __ __ __",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ br __ __ __ __",
+      "bp __ bp __ __ __ __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ br __ __ __ __",
+      "bp __ bp __ __ __ __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ br __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ __ __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ bq __ __ wp __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ br __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ wp __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ bq __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": [
+      5,
+      5
+    ]
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ bp",
+      "br __ wb __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ wp __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ bq __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ wp __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ bq __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "bp __ bp __ __ wp __ wk",
+      "__ __ bp __ wr __ __ __",
+      "__ __ __ __ __ __ __ bq",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ wk __",
+      "bp __ bp __ __ wp __ __",
+      "__ __ bp __ wr __ __ __",
+      "__ __ __ __ __ __ __ bq",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "bp bk bp __ __ wp __ __",
+      "__ __ bp __ wr __ __ __",
+      "__ __ __ __ __ __ __ bq",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "bp bk bp __ __ wp __ __",
+      "__ __ wr __ __ __ __ __",
+      "__ __ __ __ __ __ __ bq",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "bp bk bp __ __ wp __ __",
+      "__ __ wr __ __ __ bq __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ bp",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "wq __ __ __ __ __ __ __",
+      "br __ __ wb __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": [
+      2,
+      7
+    ]
+  },
+  {
+    "board": [
+      "__ __ __ wq __ __ __ __",
+      "br __ __ wb __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ wq __ __ __ __",
+      "br __ __ wb __ __ __ __",
+      "__ __ __ br __ __ __ __",
+      "__ __ __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ wq",
+      "br __ __ wb __ __ __ __",
+      "__ __ __ br __ __ __ __",
+      "__ __ __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ wb __ __ __ __",
+      "__ __ __ br __ __ __ __",
+      "br __ __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ br __ __ __ __",
+      "br wb __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "br wb __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "__ wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "br wb __ __ __ __ wk bp",
+      "bp bk bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "br bk __ __ __ __ wk bp",
+      "bp __ bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "br bk __ __ __ __ __ wk",
+      "bp __ bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq wn __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ br __ __ __ __",
+      "br bk __ __ __ __ __ wk",
+      "bp __ bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq wn __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ br __ __ __ __",
+      "br bk __ __ __ __ __ wk",
+      "bp __ bp __ __ wp __ __",
+      "__ __ wn __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk br __ __ __ __",
+      "br __ __ __ __ __ __ wk",
+      "bp __ bp __ __ wp __ __",
+      "__ __ wn __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk br __ __ __ __",
+      "br __ __ wn __ __ __ wk",
+      "bp __ bp __ __ wp __ __",
+      "__ __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk br __ __ __ __",
+      "br __ __ wn __ __ __ wk",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ wr __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk br __ __ wr __",
+      "br __ __ wn __ __ __ wk",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk __ __ __ br __",
+      "br __ __ wn __ __ __ wk",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk __ __ __ br __",
+      "br __ __ wn __ __ __ wk",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wq"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ br __",
+      "br bk __ wn __ __ __ wk",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wq"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ br __",
+      "br bk __ __ __ __ __ wk",
+      "__ wn bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wq"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ br __",
+      "__ bk __ __ __ __ __ wk",
+      "__ wn bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wq"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ br __",
+      "__ bk __ __ __ __ __ wk",
+      "__ wn bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ bk __ __ __ __ __ wk",
+      "__ wn bp __ __ wp __ __",
+      "bp __ __ __ __ __ br __",
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "br __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ bk __ __ __ __ __ wk",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ br __",
+      "__ __ wn __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ bk __ __ __ __ __ wk",
+      "br __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ br __",
+      "__ __ wn __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ bk __ __ __ __ __ wk",
+      "br __ bp wn __ wp __ __",
+      "bp __ __ __ __ __ br __",
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ wk",
+      "br __ bp wn __ wp __ __",
+      "bp __ __ __ __ __ br __",
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ wk",
+      "br __ bp wn __ wp __ __",
+      "bp __ __ __ __ __ br __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ wk",
+      "br __ bp wn __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ wk __",
+      "br __ bp wn __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ wk __",
+      "__ br bp wn __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ wn wk __",
+      "__ br bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "__ __ __ __ __ wn wk __",
+      "__ br bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "bk __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ br bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ br bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ br bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "__ __ __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ br",
+      "__ br __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ wq",
+      "__ br __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ bp __ __ wp __ __",
+      "bp br __ __ __ __ __ wq",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ bp __ __ wp __ __",
+      "bp wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ __ bk __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ bp __ __ wp __ __",
+      "bp wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ __ bk __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wn __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ bk __ __ wk __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ bk __ wn wk __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bk __ __ wn wk __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wn",
+      "__ __ bk __ __ __ wk __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wn",
+      "__ __ __ __ __ __ wk __",
+      "wq __ bp bk __ wp __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wn",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp bk __ wp wk __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wn",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp wk __",
+      "bp __ bk __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ wn __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp wk __",
+      "bp __ bk __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ wn __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp wk __",
+      "bp __ __ __ __ __ __ __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp wk __",
+      "bp __ __ __ __ __ __ __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp wk __",
+      "bp __ __ __ __ __ __ __",
+      "bk __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "bk __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "__ bk __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ wp __ __",
+      "bp __ bk __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ wq __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ wp __ __",
+      "bp __ bk __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ wq __ __ __ __ __",
+      "__ __ __ wn __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp bk __ wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp bk wn wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ bk __ __ __ __",
+      "__ __ bp __ wn wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ bk __ __ __ __",
+      "__ __ bp __ wn wp __ __",
+      "bp __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ bk __ __ __ __",
+      "__ __ bp __ wn wp __ __",
+      "__ __ __ __ __ __ wk __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ bk __ __ __ __",
+      "__ __ bp __ wn wp wk __",
+      "__ __ __ __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ bk wp wk __",
+      "__ __ __ __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ bp __ bk wp __ __",
+      "__ __ __ __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ wq __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ bk wp __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ wq __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ bk wp __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ wq __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ bk __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ bk __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ wq __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ bk __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ bk __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ bk __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ bk __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ bk __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ bk __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ bk __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ bk __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ bk",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ bk",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ bk"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "bp __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ bk"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "bq __ __ __ __ __ __ bk"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "bq __ __ __ __ __ __ bk"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "wq __ __ __ __ __ __ __",
+      "__ __ __ __ __ bq __ bk"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ wq bp __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ bq __ bk"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ wq bp __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ bq bk __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ wq __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ bq bk __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ wq __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ __ __ __ bq __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ __ __ __ wq __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ wk",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ __ __ bk",
+      "__ __ __ __ __ wq __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ __ __ bk",
+      "__ __ __ __ __ wq __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ bk",
+      "__ __ __ __ __ wq __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bp __ __ __ __ bk",
+      "__ __ wq __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ wq __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ bp __ __ __ __ __",
+      "__ __ __ __ __ wq __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ bq __ __ wq __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ wq __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ wq __ __ __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ __ __ wq __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ bk",
+      "__ __ __ __ wq __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ bk",
+      "__ __ __ __ wq __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ bk __",
+      "__ __ __ __ wq __ __ __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ bk __",
+      "__ __ __ __ __ __ __ __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ bk"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ __ bk"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ wq __ __ __",
+      "__ __ __ __ __ __ bk __"
+    ],
+    "turn": "w",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  },
+  {
+    "board": [
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ __ __",
+      "__ __ __ __ __ __ wk __",
+      "__ __ __ __ __ __ wq __",
+      "__ __ __ __ __ __ bk __"
+    ],
+    "turn": "b",
+    "has_moved": {
+      "wR0": true,
+      "wR7": true,
+      "bR0": true,
+      "bR7": true
+    },
+    "en_passant": null
+  }
+]
