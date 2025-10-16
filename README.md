@@ -2,11 +2,8 @@
 A program which lets people play chess on the desktop.
 
 <p>
-  <img src="./images/preview.gif" width="300">
+  <img src="./image/preview.gif" width="600">
 </p>
-
-<br>
-
 
 ## 🛠️ Why I built this  
 - I’ve always wanted to play chess on my desktop.  
