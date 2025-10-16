@@ -1,7 +1,19 @@
 # Play-chess-on-desktop
 A program which lets people play chess on the desktop.
 
----
+<p>
+  <img src="./images/preview.git" width="300">
+</p>
+
+<br>
+
+
+## 🛠️ Why I built this  
+- I’ve always wanted to play chess on my desktop.  
+- It’s a great opportunity to learn how computers play chess.  
+- It’s fun to “teach” a computer how to play the game.  
+
+<br>
 
 ## 🧩 Features
 - 🎮 **Interactive Chessboard** – Drag, click, and play directly on screen  
@@ -11,14 +23,14 @@ A program which lets people play chess on the desktop.
 - 🔁 **Board Flip** – Instantly switch perspective  
 - 🧠 **AI Move Highlights** – Shows AI’s thinking process  
 - ♕ **Pawn Promotion UI** – Pick your new piece visually  
-- 🎥 **Animated Launcher** – Start the game via `chess_button.py` with pawn animation
+- 🎥 **Animated Launcher** – Start the game via `chess_button.py` with pawn animation  
 
----
+<br>
 
 ## 📂 Project Structure
 ```
 Desktop chess/
-├── image/               # Chessboard and piece graphics
+├── image/               # Chessboard graphics
 ├── video/               # PawnPromotion.mp4 animation
 ├── chess_board.py       # Main GUI and game control
 ├── chess_button.py      # Animation launcher and game toggle
@@ -29,7 +41,7 @@ Desktop chess/
 └── README.md            # Project documentation
 ```
 
----
+<br>
 
 ## ⚙️ Requirements
 Install dependencies before running:
@@ -37,7 +49,7 @@ Install dependencies before running:
 pip install pillow opencv-python numpy
 ```
 
----
+<br>
 
 ## ▶️ How to Run
 1. Make sure the folders **`/image`** and **`/video`** exist and contain required assets.  
@@ -45,9 +57,9 @@ pip install pillow opencv-python numpy
    ```bash
    python chess_button.py
    ```
-3. Click the **pawn animation** to open or close the main chess window.
+3. Click the pawn button at the bottom middle of the screen to open or close the main chess window.
 
----
+<br>
 
 ## ⌨️ Hotkeys
 | Key | Action |
@@ -61,15 +73,7 @@ pip install pillow opencv-python numpy
 | `F` | Redo |
 | `G` | Replay game |
 
----
-
-## 🧠 Tech Stack
-- **Python 3.9+**
-- **Tkinter** – GUI framework  
-- **OpenCV & Pillow** – Image/video processing  
-- **JSON** – Save system
-
----
+<br>
 
 ## 📜 License
 This project is released under the **MIT License**.  
