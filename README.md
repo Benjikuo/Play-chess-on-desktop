@@ -2,7 +2,7 @@
 A program which lets people play chess on the desktop.
 
 <p>
-  <img src="./images/preview.git" width="300">
+  <img src="./images/preview.gif" width="300">
 </p>
 
 <br>
