@@ -18,7 +18,7 @@ def remove_black_to_transparent(frame, tol=TOL):
     return rgba
 
 
-def play(frames_seq, speed=30):
+def play(frames_seq, speed=15):
     if not frames_seq:
         return
 

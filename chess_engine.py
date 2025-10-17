@@ -1,12 +1,11 @@
 import random
-import time
 
 PIECE_VALUE = {"p": 11, "n": 35, "b": 40, "r": 55, "q": 95, "k": 100}
 INF = 10**9
 ai_stop = False
 
 PIECE_SQUARE = {
-    "k": [  # King
+    "k": [
         [-3, -2, -1, 0, 0, -1, -2, -3],
         [-2, 1, 1, 1, 1, 1, -1, -2],
         [-1, 1, 1, 1, 1, 1, 1, -1],
@@ -16,7 +15,7 @@ PIECE_SQUARE = {
         [4, 3, 2, -1, -1, 1, 3, 4],
         [4, 8, 6, -1, 0, -1, 8, 4],
     ],
-    "q": [  # Queen
+    "q": [
         [-5, 0, 1, 1, 1, 1, 0, -5],
         [2, 3, 3, 3, 3, 3, 3, 2],
         [0, 0, 1, 1, 1, 1, 0, 0],
@@ -26,7 +25,7 @@ PIECE_SQUARE = {
         [-5, 0, 3, 3, -1, 0, 0, -5],
         [-5, 3, 3, 3, 3, 0, 0, -5],
     ],
-    "r": [  # Rook
+    "r": [
         [1, 1, 1, 1, 1, 1, 1, 1],
         [3, 7, 7, 7, 7, 7, 7, 3],
         [0, 0, 0, 0, 0, 0, 0, 0],
@@ -36,7 +35,7 @@ PIECE_SQUARE = {
         [-2, 0, 1, 1, 1, 1, 0, -2],
         [-1, -1, 1, 6, 6, 1, -1, -1],
     ],
-    "b": [  # Bishop
+    "b": [
         [-4, -2, -1, -1, -1, -1, -2, -4],
         [-2, 0, -1, 0, 0, -1, 0, -2],
         [1, 0, 1, 1, 1, 1, 0, 1],
@@ -46,7 +45,7 @@ PIECE_SQUARE = {
         [-2, 2, 0, 2, 2, 0, 2, -2],
         [-4, -2, -2, -1, -1, -2, -2, -4],
     ],
-    "n": [  # Knight
+    "n": [
         [-4, -2, -2, -2, -2, -2, -2, -4],
         [-2, -2, 6, 5, 5, 6, -2, -2],
         [-2, 2, 3, 4, 4, 3, 2, -2],
@@ -56,7 +55,7 @@ PIECE_SQUARE = {
         [-2, -2, 0, 0, 0, 0, -2, -2],
         [-4, -2, -2, -2, -2, -2, -2, -4],
     ],
-    "p": [  # Pawn
+    "p": [
         [0, 0, 0, 0, 0, 0, 0, 0],
         [11, 10, 11, 11, 11, 11, 10, 11],
         [9, 8, 8, 9, 9, 8, 8, 9],
@@ -70,10 +69,9 @@ PIECE_SQUARE = {
 
 
 def find_best_move(logic, max_depth, callback=None):
-    original_turn = logic.turn  # ✅ 記住最初是誰在走
+    original_turn = logic.turn
 
     def minimax(depth, alpha, beta, maximizing):
-
         if depth == 0:
             score = 0
             for r in range(8):
@@ -105,24 +103,22 @@ def find_best_move(logic, max_depth, callback=None):
                 for c in range(8):
                     if logic.board[r][c] == enemy_color + "k":
                         mobility = len(logic.potential_moves(r, c))
-                        score += (10 - mobility) * 3  # 國王越被限制，分數越高
+                        score += (10 - mobility) * 3
                         break
 
             enemy_king = logic.locate_king(enemy_color)
             my_king = logic.locate_king(original_turn)
             if enemy_king and my_king:
                 dist = abs(my_king[0] - enemy_king[0]) + abs(my_king[1] - enemy_king[1])
-                score += max(0, 100 - dist ^ 2) * 3  # 自家王越靠近敵王加分（幫助收官）
+                score += max(0, 100 - dist ^ 2) * 3
 
             return score
 
         legal = logic.get_legal_moves(logic.turn)
         if not legal:
             if logic.is_in_check(logic.turn):
-                # 🟥 被將死（對方贏）
                 return -100000 if maximizing else 100000
             else:
-                # 🟨 平局
                 return 0
 
         if maximizing:
@@ -130,18 +126,15 @@ def find_best_move(logic, max_depth, callback=None):
             for mv in legal:
                 snap = logic.snapshot()
                 logic.make_move(*mv)
-
                 if not legal:
                     if logic.is_in_check(logic.turn):
                         return -(10**11) if maximizing else 10**11
                     return 0
-
                 val = minimax(depth - 1, alpha, beta, False)
                 logic.restore(snap)
-
                 best = max(best, val)
                 alpha = max(alpha, best)
-                if beta <= alpha:  # 🚀 剪枝：提前結束
+                if beta <= alpha:
                     break
             return best
         else:
@@ -149,22 +142,18 @@ def find_best_move(logic, max_depth, callback=None):
             for mv in legal:
                 snap = logic.snapshot()
                 logic.make_move(*mv)
-
                 if not legal:
                     if logic.is_in_check(logic.turn):
                         return -(10**11) if maximizing else 10**11
                     return 0
-
                 val = minimax(depth - 1, alpha, beta, True)
                 logic.restore(snap)
-
                 best = min(best, val)
                 beta = min(beta, best)
                 if beta <= alpha:
                     break
             return best
 
-    # === 主函式 ===
     best_move = None
     best_score = -INF
     legal = logic.get_legal_moves(logic.turn)
@@ -175,13 +164,11 @@ def find_best_move(logic, max_depth, callback=None):
         logic.make_move(*mv)
         score = minimax(max_depth - 1, -INF, INF, False)
         logic.restore(snap)
-
         if score > best_score + 5 - random.random() * 10:
             best_score = score
             best_move = mv
         elif score == best_score and random.random() < 0.1:
-            best_move = mv  # 增加隨機性
-
+            best_move = mv
     if callback:
         callback(None)
     return best_move
