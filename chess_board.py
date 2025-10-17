@@ -83,6 +83,8 @@ def load_game(filename="chess_save.json"):
 
 
 def draw_board(clear=False):
+    global flipped
+
     canva.delete("all")
     bg_image = Image.open(
         "./image/chessboard_clean2.png" if flipped else "./image/chessboard_clean.png"
@@ -138,7 +140,7 @@ def draw_board(clear=False):
 
 
 def on_click(event):
-    if do_progression:
+    if do_progression or ai_doing:
         return
 
     global dragging, selected, highlight, wrong_hint_squares
@@ -261,6 +263,7 @@ def ai_move():
     selected = None
     highlight = []
     wrong_hint_squares = []
+    draw_board()
     mv = find_best_move(logic, 3, callback=draw_ai_think)
     if mv:
         logic.do_move(*mv)
