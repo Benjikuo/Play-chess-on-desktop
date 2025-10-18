@@ -42,6 +42,7 @@ def save_game(filename="chess_save.json"):
                 "turn": state["turn"],
                 "has_moved": state["has_moved"],
                 "en_passant": state["en_passant"],
+                "last_move": state["last_move"],
             }
         )
 
@@ -70,6 +71,7 @@ def load_game(filename="chess_save.json"):
                     "turn": state["turn"],
                     "has_moved": state["has_moved"],
                     "en_passant": state["en_passant"],
+                    "last_move": state["last_move"],
                 }
             )
 
@@ -88,7 +90,7 @@ def draw_board(clear=False):
     global flipped, last_move
     canva.delete("all")
     bg_image = Image.open(
-        "./image/chessboard_clean2.png" if flipped else "./image/chessboard_clean.png"
+        "image/chessboard_clean2.png" if flipped else "image/chessboard_clean.png"
     )
     bg_photo = ImageTk.PhotoImage(bg_image)
     canva.create_image(0, 0, image=bg_photo, anchor="nw")
@@ -118,17 +120,14 @@ def draw_board(clear=False):
                 canva.create_rectangle(x0, y0, x1, y1, fill=CHECK, outline="")
 
             if last_move:
-                try:
-                    ((from_r, from_c), (to_r, to_c)) = last_move  # type: ignore
-                    if (white_r, white_c) == (from_r, from_c) or (white_r, white_c) == (
-                        to_r,
-                        to_c,
-                    ):
-                        canva.create_rectangle(
-                            x0, y0, x1, y1, fill="#777777", stipple="gray50", outline=""
-                        )
-                except Exception:
-                    pass
+                ((from_r, from_c), (to_r, to_c)) = last_move  # type: ignore
+                if (white_r, white_c) == (from_r, from_c) or (white_r, white_c) == (
+                    to_r,
+                    to_c,
+                ):
+                    canva.create_rectangle(
+                        x0, y0, x1, y1, fill="#777777", stipple="gray50", outline=""
+                    )
 
             if selected and (white_r, white_c) == selected:
                 canva.create_rectangle(
@@ -174,8 +173,8 @@ def on_click(event):
     pos = (white_r, white_c)
 
     legal_moves = logic.get_legal_moves(logic.turn)
-    hide_promotion_buttons()
 
+    hide_promotion_buttons()
     if selected and ((selected, pos) in legal_moves):
 
         def promotion_callback(color):
@@ -184,7 +183,7 @@ def on_click(event):
             return selected_piece.get()
 
         logic.do_move(selected, pos, promotion_callback)
-        last_move = (selected, pos)
+        last_move = logic.restore(logic.history[logic.history_index])
         save_game()
 
         selected = None
@@ -285,7 +284,7 @@ def ai_move():
     mv = find_best_move(logic, 3, callback=draw_ai_think)
     if mv:
         logic.do_move(*mv)
-        last_move = mv
+        last_move = logic.restore(logic.history[logic.history_index])
         save_game()
         draw_board()
         if ai_continue:
@@ -337,7 +336,7 @@ def random_move():
     mv = find_random_move(logic)
     if mv:
         logic.do_move(*mv)
-        last_move = mv
+        last_move = logic.restore(logic.history[logic.history_index])
         save_game()
         draw_board()
 
@@ -350,7 +349,7 @@ def undo_move():
     do_progression = False
     logic.undo()
     selected = None
-    last_move = None
+    last_move = logic.restore(logic.history[logic.history_index])
     highlight = []
     wrong_hint_squares = []
     draw_board()
@@ -364,7 +363,7 @@ def forward_move():
     do_progression = False
     logic.forward()
     selected = None
-    last_move = None
+    last_move = logic.restore(logic.history[logic.history_index])
     highlight = []
     wrong_hint_squares = []
     draw_board()
@@ -383,7 +382,6 @@ def progression():
 
     do_progression = True
     selected = None
-    last_move = None
     highlight = []
     wrong_hint_squares = []
     print(logic.history_index, len(logic.history))
@@ -392,6 +390,7 @@ def progression():
 
     while logic.history_index < len(logic.history):
         logic.restore(logic.history[logic.history_index])
+        last_move = logic.restore(logic.history[logic.history_index])
         draw_board()
         root.update()
         time.sleep(0.1)
@@ -428,13 +427,7 @@ def show_promotion_buttons():
             bd=3,
             command=lambda p=piece: choose_promotion(p),
         )
-
-        btn.place(
-            x=i * (size + 5) + 5,
-            y=5,
-            width=size,
-            height=size,
-        )
+        btn.place(x=i * (size + 5) + 5, y=5, width=size, height=size)
         promotion_buttons.append(btn)
 
 

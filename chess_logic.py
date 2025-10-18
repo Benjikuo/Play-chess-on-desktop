@@ -86,8 +86,10 @@ class ChessLogic:
         p = self.board[pr][pc]
         if not p:
             return []
+
         color, type = p[0], p[1]
         moves = []
+
         if type == "p":
             step = -1 if color == "w" else 1
             start = 6 if color == "w" else 1
@@ -103,6 +105,7 @@ class ChessLogic:
                 er, ec = self.en_passant
                 if pr + step == er and abs(ec - pc) == 1:
                     moves.append((er, ec))
+
         elif type == "n":
             for dr, dc in [
                 (-2, -1),
@@ -117,6 +120,7 @@ class ChessLogic:
                 mr, mc = pr + dr, pc + dc
                 if in_bounds(mr, mc) and find_color(self.board[mr][mc]) != color:
                     moves.append((mr, mc))
+
         elif type in ["b", "r", "q"]:
             dirs = []
             if type in ["b", "q"]:
@@ -134,6 +138,7 @@ class ChessLogic:
                         if find_color(self.board[mr][mc]) != color:
                             moves.append((mr, mc))
                         break
+
         elif type == "k":
             for dr in (-1, 0, 1):
                 for dc in (-1, 0, 1):
@@ -168,6 +173,7 @@ class ChessLogic:
         r1, c1 = dst
         piece = self.board[r0][c0]
         color = find_color(piece)
+
         if piece == color + "k":
             self.defined_castling[f"{color}R0"] = True
             self.defined_castling[f"{color}R7"] = True
@@ -176,14 +182,17 @@ class ChessLogic:
                 self.defined_castling[f"{color}R0"] = True
             elif c0 == 7:
                 self.defined_castling[f"{color}R7"] = True
+
         self.en_passant = None
         if find_type(piece) == "p" and (r0 != r1 and self.board[r1][c1] == ""):
             if color == "w":
                 self.board[r1 + 1][c1] = ""
             else:
                 self.board[r1 - 1][c1] = ""
+
         if find_type(piece) == "p" and abs(r1 - r0) == 2:
             self.en_passant = ((r0 + r1) // 2, c0)
+
         if find_type(piece) == "k" and abs(c1 - c0) == 2:
             if c1 > c0:
                 self.board[r1][5] = self.board[r1][7]
@@ -193,6 +202,7 @@ class ChessLogic:
                 self.board[r1][3] = self.board[r1][0]
                 self.board[r1][0] = ""
                 self.defined_castling[f"{color}R0"] = True
+
         if find_type(piece) == "p" and (r1 == 0 or r1 == 7):
             promote = None
             if promotion_callback:
@@ -202,6 +212,7 @@ class ChessLogic:
             self.board[r1][c1] = color + promote
         else:
             self.board[r1][c1] = piece
+
         self.board[r0][c0] = ""
         self.turn = enemy(self.turn)
 
@@ -225,7 +236,7 @@ class ChessLogic:
             self.history = self.history[: self.history_index + 1]
         self.make_move(src, dst, promotion_callback)
         self.history_index += 1
-        self.history.append(self.snapshot())
+        self.history.append(self.snapshot((src, dst)))
 
     def undo(self):
         if self.history_index > 0:
@@ -237,12 +248,13 @@ class ChessLogic:
             self.history_index += 1
             self.restore(self.history[self.history_index])
 
-    def snapshot(self):
+    def snapshot(self, last_move=None):
         return {
             "board": deepcopy(self.board),
             "turn": self.turn,
             "has_moved": deepcopy(self.defined_castling),
             "en_passant": self.en_passant,
+            "last_move": deepcopy(last_move),
         }
 
     def restore(self, snap):
@@ -250,3 +262,4 @@ class ChessLogic:
         self.turn = snap["turn"]
         self.defined_castling = deepcopy(snap["has_moved"])
         self.en_passant = snap["en_passant"]
+        return snap.get("last_move", None)
