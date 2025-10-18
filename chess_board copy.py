@@ -17,7 +17,6 @@ FONT_SIZE = 20
 flipped = False
 dragging = False
 selected = None
-last_move = None
 ai_from = None
 ai_to = None
 ai_continue = False
@@ -75,17 +74,17 @@ def load_game(filename="chess_save.json"):
 
         logic.history = expanded_history
         logic.history_index = len(expanded_history) - 1
-        print(logic.history_index)
         logic.restore(expanded_history[-1])
-        print("♻️ Game loaded successfully")
+        print("♻️ Game loaded")
     except Exception as e:
-        print("⚠️ Failed to load game:", e)
+        print("⚠️ Load failed:", e)
         logic.board = START_BOARD
     draw_board()
 
 
 def draw_board(clear=False):
-    global flipped, last_move
+    global flipped
+
     canva.delete("all")
     bg_image = Image.open(
         "./image/chessboard_clean2.png" if flipped else "./image/chessboard_clean.png"
@@ -117,19 +116,6 @@ def draw_board(clear=False):
             ):
                 canva.create_rectangle(x0, y0, x1, y1, fill=CHECK, outline="")
 
-            if last_move:
-                try:
-                    ((from_r, from_c), (to_r, to_c)) = last_move  # type: ignore
-                    if (white_r, white_c) == (from_r, from_c) or (white_r, white_c) == (
-                        to_r,
-                        to_c,
-                    ):
-                        canva.create_rectangle(
-                            x0, y0, x1, y1, fill="#777777", stipple="gray50", outline=""
-                        )
-                except Exception:
-                    pass
-
             if selected and (white_r, white_c) == selected:
                 canva.create_rectangle(
                     x0, y0, x1, y1, fill=PICK_HIGHLIGHT, stipple="gray50", outline=""
@@ -154,10 +140,10 @@ def draw_board(clear=False):
 
 
 def on_click(event):
-    global dragging, selected, highlight, wrong_hint_squares, ai_doing, do_progression, last_move
     if do_progression or ai_doing:
         return
 
+    global dragging, selected, highlight, wrong_hint_squares
     dragging = False
     wrong_hint_squares = []
 
@@ -172,10 +158,9 @@ def on_click(event):
     white_c = 7 - c if flipped else c
     piece = logic.board[white_r][white_c]
     pos = (white_r, white_c)
-
     legal_moves = logic.get_legal_moves(logic.turn)
-    hide_promotion_buttons()
 
+    hide_promotion_buttons()
     if selected and ((selected, pos) in legal_moves):
 
         def promotion_callback(color):
@@ -184,9 +169,7 @@ def on_click(event):
             return selected_piece.get()
 
         logic.do_move(selected, pos, promotion_callback)
-        last_move = (selected, pos)
         save_game()
-
         selected = None
         highlight = []
         wrong_hint_squares = []
@@ -223,7 +206,6 @@ def do_move(event):
 def draw_ai_think(move):
     if move is None:
         return
-
     global ai_from, ai_to, ai_doing
     if ai_to:
         canva.delete(ai_to)
@@ -231,21 +213,22 @@ def draw_ai_think(move):
     if ai_from:
         canva.delete(ai_from)
         ai_from = None
-
     (r0, c0), (r1, c1) = move
     if flipped:
         r0, c0 = 7 - r0, 7 - c0
         r1, c1 = 7 - r1, 7 - c1
-
-    fx0 = (c0 + 1) * CELL_SIZE
-    fy0 = (r0 + 1) * CELL_SIZE
-    fx1 = (c0 + 2) * CELL_SIZE
-    fy1 = (r0 + 2) * CELL_SIZE
-
-    tx0 = (c1 + 1) * CELL_SIZE
-    ty0 = (r1 + 1) * CELL_SIZE
-    tx1 = (c1 + 2) * CELL_SIZE
-    ty1 = (r1 + 2) * CELL_SIZE
+    fx0, fy0, fx1, fy1 = (
+        (c0 + 1) * CELL_SIZE,
+        (r0 + 1) * CELL_SIZE,
+        (c0 + 2) * CELL_SIZE,
+        (r0 + 2) * CELL_SIZE,
+    )
+    tx0, ty0, tx1, ty1 = (
+        (c1 + 1) * CELL_SIZE,
+        (r1 + 1) * CELL_SIZE,
+        (c1 + 2) * CELL_SIZE,
+        (r1 + 2) * CELL_SIZE,
+    )
 
     if ai_continue:
         canva.create_rectangle(
@@ -272,10 +255,9 @@ def ai_move_continue():
 
 
 def ai_move():
-    global logic, selected, highlight, wrong_hint_squares, ai_continue, do_progression, ai_doing, ai_stop, last_move
+    global logic, selected, highlight, wrong_hint_squares, ai_continue, do_progression, ai_doing, ai_stop
     if ai_doing:
         return
-
     ai_doing = True
     do_progression = False
     selected = None
@@ -285,22 +267,19 @@ def ai_move():
     mv = find_best_move(logic, 3, callback=draw_ai_think)
     if mv:
         logic.do_move(*mv)
-        last_move = mv
         save_game()
         draw_board()
         if ai_continue:
             root.after(0, ai_move)
     else:
         ai_continue = False
-
     ai_doing = False
 
 
 def reset_board():
-    global logic, selected, highlight, wrong_hint_squares, ai_stop, do_progression, last_move, ai_doing
+    global logic, selected, highlight, wrong_hint_squares, ai_stop, do_progression
     if ai_doing:
         return
-
     if logic.board == START_BOARD:
         draw_board(True)
         root.update()
@@ -309,7 +288,6 @@ def reset_board():
     ai_stop = True
     do_progression = False
     selected = None
-    last_move = None
     highlight = []
     wrong_hint_squares = []
     save_game()
@@ -320,16 +298,14 @@ def flip_board():
     global flipped, ai_doing
     if ai_doing:
         return
-
     flipped = not flipped
     draw_board()
 
 
 def random_move():
-    global logic, selected, highlight, wrong_hint_squares, do_progression, ai_doing, last_move
+    global logic, selected, highlight, wrong_hint_squares, do_progression, ai_doing
     if ai_doing:
         return
-
     do_progression = False
     selected = None
     highlight = []
@@ -337,7 +313,6 @@ def random_move():
     mv = find_random_move(logic)
     if mv:
         logic.do_move(*mv)
-        last_move = mv
         save_game()
         draw_board()
 
@@ -346,7 +321,6 @@ def undo_move():
     global selected, highlight, wrong_hint_squares, do_progression, ai_doing
     if ai_doing:
         return
-
     do_progression = False
     logic.undo()
     selected = None
@@ -359,7 +333,6 @@ def forward_move():
     global selected, highlight, wrong_hint_squares, do_progression, ai_doing
     if ai_doing:
         return
-
     do_progression = False
     logic.forward()
     selected = None
@@ -373,20 +346,16 @@ def progression():
     if do_progression or ai_doing:
         do_progression = False
         return
-
     if len(logic.history) <= 1:
         draw_board(True)
         root.update()
         time.sleep(0.001)
-
     do_progression = True
     selected = None
     highlight = []
     wrong_hint_squares = []
-    print(logic.history_index, len(logic.history))
     if logic.history_index >= len(logic.history) - 1:
         logic.history_index = 0
-
     while logic.history_index < len(logic.history):
         logic.restore(logic.history[logic.history_index])
         draw_board()
@@ -402,17 +371,14 @@ def progression():
 def show_promotion_buttons():
     hide_promotion_buttons()
     global promotion_buttons, promotion_frame
-
     if logic.turn == "w":
         choices = (("♕", "q"), ("♖", "r"), ("♗", "b"), ("♘", "n"))
     else:
         choices = (("♛", "q"), ("♜", "r"), ("♝", "b"), ("♞", "n"))
-
     size = CELL_SIZE * 1.2
     promotion_frame = tk.Frame(root, bg="#333333")
     promotion_frame.config(width=(size + 5) * 4 + 5, height=size + 10)
     promotion_frame.place(x=175 - (4 * size + 25) / 2, y=175 - (size + 10) / 2)
-
     for i, (label, piece) in enumerate(choices):
         btn = tk.Button(
             promotion_frame,
@@ -425,13 +391,7 @@ def show_promotion_buttons():
             bd=3,
             command=lambda p=piece: choose_promotion(p),
         )
-
-        btn.place(
-            x=i * (size + 5) + 5,
-            y=5,
-            width=size,
-            height=size,
-        )
+        btn.place(x=i * (size + 5) + 5, y=5, width=size, height=size)
         promotion_buttons.append(btn)
 
 
@@ -462,8 +422,10 @@ selected_piece = tk.StringVar()
 load_game()
 
 root.update_idletasks()
-screen_w, screen_h = root.winfo_screenwidth(), root.winfo_screenheight()
-window_w, window_h = root.winfo_width(), root.winfo_height()
+screen_w = root.winfo_screenwidth()
+screen_h = root.winfo_screenheight()
+window_w = root.winfo_width()
+window_h = root.winfo_height()
 x = (screen_w - window_w) // 2
 y = (screen_h - window_h) // 2
 root.geometry(f"{window_w}x{window_h}+{x}+{y}")
