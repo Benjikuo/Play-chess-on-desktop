@@ -343,33 +343,35 @@ def random_move():
 
 
 def undo_move():
-    global selected, highlight, wrong_hint_squares, do_progression, ai_doing
+    global selected, highlight, wrong_hint_squares, do_progression, ai_doing, last_move
     if ai_doing:
         return
 
     do_progression = False
     logic.undo()
     selected = None
+    last_move = None
     highlight = []
     wrong_hint_squares = []
     draw_board()
 
 
 def forward_move():
-    global selected, highlight, wrong_hint_squares, do_progression, ai_doing
+    global selected, highlight, wrong_hint_squares, do_progression, ai_doing, last_move
     if ai_doing:
         return
 
     do_progression = False
     logic.forward()
     selected = None
+    last_move = None
     highlight = []
     wrong_hint_squares = []
     draw_board()
 
 
 def progression():
-    global selected, highlight, wrong_hint_squares, do_progression, ai_doing
+    global selected, highlight, wrong_hint_squares, do_progression, ai_doing, last_move
     if do_progression or ai_doing:
         do_progression = False
         return
@@ -381,6 +383,7 @@ def progression():
 
     do_progression = True
     selected = None
+    last_move = None
     highlight = []
     wrong_hint_squares = []
     print(logic.history_index, len(logic.history))
