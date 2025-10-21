@@ -70,6 +70,7 @@ if not ret:
         "❌ Unable to read PawnPromotion.mp4. Please check the file path."
     )
 
+
 h, w = frame.shape[:2]
 new_w, new_h = int(w * SCALE), int(h * SCALE)
 
