@@ -19,8 +19,8 @@ A program which lets people play chess on the desktop.
 - ⏪ **Undo / Redo / Replay** – Step through previous game states  
 - 🔁 **Board Flip** – Instantly switch perspective  
 - 🧠 **AI Move Highlights** – Shows AI’s thinking process  
-- ♕ **Pawn Promotion UI** – Pick your new piece visually  
-- 🎥 **Animated Launcher** – Start the game via `chess_button.py` with pawn animation  
+- ♟️ **Pawn Promotion UI** – Pick your new piece visually  
+- 🎬 **Animated Launcher** – Start the game via `chess_button.py` with pawn animation  
 
 <br>
 
@@ -72,6 +72,6 @@ pip install pillow opencv-python numpy
 
 <br>
 
-## 📜 License
+## 📜 License  
 This project is released under the **MIT License**.  
-Feel free to modify and use for learning or personal projects.
+Feel free to modify and use for learning or personal projects.  
