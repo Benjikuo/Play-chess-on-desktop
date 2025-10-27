@@ -43,7 +43,7 @@ def toggle_state(event=None):
     if playing_video:
         return
     if pawn:
-        chess_program = subprocess.Popen(["python", "chess_board.py"])
+        chess_program = subprocess.Popen(["pythonw", "chess_board.py"])
         play(frames, speed=10)
         pawn = False
     else:
