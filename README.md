@@ -37,7 +37,7 @@ Desktop chess/
 ├── chess_logic.py       # Core chess rules and move validation
 ├── chess_save.json      # Auto-saved game data
 ├── LICENSE              # License file
-└── README.md            # Project documentation
+└── README.md            # MIT license
 ```
 
 <br>
