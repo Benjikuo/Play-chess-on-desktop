@@ -62,7 +62,7 @@ pip install pillow opencv-python numpy
 
 ## ⌨️ Hotkeys
 | Key | Action |
-|-----|---------|
+|-----|--------|
 | `W` | Toggle continuous AI |
 | `E` | Single AI move |
 | `R` | Reset board |
