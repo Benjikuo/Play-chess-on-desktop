@@ -78,4 +78,4 @@ pip install pillow opencv-python numpy
 This project is released under the **MIT License**.  
 Feel free to modify and use for learning or personal projects.  
 
-**Let the chess game begin**
+**Let the chess game begin!**
