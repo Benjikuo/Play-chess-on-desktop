@@ -1,5 +1,5 @@
 # Play-chess-on-desktop
-A program which lets people play chess on the desktop.
+A desktop program that lets users play chess either against others or a simple AI.
 
 <p>
   <img src="./image/preview.gif" width="600">
