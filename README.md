@@ -28,7 +28,7 @@ A desktop program that lets users play chess either against others or a simple A
 
 ## 📂 Project Structure
 ```
-Desktop chess/
+Play-chess-on-desktop/
 ├── image/               # Chessboard graphics
 ├── video/               # PawnPromotion.mp4 animation
 ├── chess_board.py       # Main GUI and game control
