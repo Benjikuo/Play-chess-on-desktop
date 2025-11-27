@@ -60,7 +60,7 @@ pip install pillow opencv-python numpy
 
 <br>
 
-## ⌨️ Hotkeys
+## ⌨️ The hotkeys
 | Key | Action |
 |-----|--------|
 | `W` | Toggle continuous AI |
